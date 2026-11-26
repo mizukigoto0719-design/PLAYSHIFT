@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 800" width="1400" height="800" role="img" aria-label="cross.jpg 1400x800">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e6ecf1"/><stop offset="1" stop-color="#d7dfe6"/></linearGradient></defs>
+<rect width="1400" height="800" fill="url(#g)"/>
+
+<path d="M20.0 800 Q20.0 592.0 260 584.0 Q500.0 592.0 500.0 800 Z" fill="#1d1d22"/>
+<rect x="218.4" y="500.8" width="83.2" height="112.0" rx="32.0" fill="#f1c9a5"/>
+<ellipse cx="260" cy="400.0" rx="103.04" ry="112.0" fill="#f1c9a5"/>
+<path d="M153.60000000000002 388.8 Q159.2 260.0 260 267.84000000000003 Q366.4 260.0 366.4 388.8 Q327.2 321.6 260 330.56 Q192.8 321.6 153.60000000000002 388.8 Z" fill="#2a1d18"/>
+
+<path d="M395.0 800 Q395.0 605.0 620 597.5 Q845.0 605.0 845.0 800 Z" fill="#e8e4dc"/>
+<rect x="581.0" y="519.5" width="78.0" height="105.0" rx="30.0" fill="#f6d3b6"/>
+<ellipse cx="620" cy="425.0" rx="96.60000000000001" ry="105.0" fill="#f6d3b6"/>
+<path d="M520.25 414.5 Q525.5 293.75 620 301.1 Q719.75 293.75 719.75 414.5 Q683.0 351.5 620 359.9 Q557.0 351.5 520.25 414.5 Z" fill="#4a3328"/>
+
+<path d="M725.0 800 Q725.0 605.0 950 597.5 Q1175.0 605.0 1175.0 800 Z" fill="#2c3a4f"/>
+<rect x="911.0" y="519.5" width="78.0" height="105.0" rx="30.0" fill="#e8b88f"/>
+<ellipse cx="950" cy="425.0" rx="96.60000000000001" ry="105.0" fill="#e8b88f"/>
+<path d="M850.25 414.5 Q855.5 293.75 950 301.1 Q1049.75 293.75 1049.75 414.5 Q1013.0 351.5 950 359.9 Q887.0 351.5 850.25 414.5 Z" fill="#3a2a22"/>
+
+<path d="M1015.0 800 Q1015.0 605.0 1240 597.5 Q1465.0 605.0 1465.0 800 Z" fill="#6b7f5c"/>
+<rect x="1201.0" y="519.5" width="78.0" height="105.0" rx="30.0" fill="#dba982"/>
+<ellipse cx="1240" cy="425.0" rx="96.60000000000001" ry="105.0" fill="#dba982"/>
+<path d="M1140.25 414.5 Q1145.5 293.75 1240 301.1 Q1339.75 293.75 1339.75 414.5 Q1303.0 351.5 1240 359.9 Q1177.0 351.5 1140.25 414.5 Z" fill="#2a1d18"/>
+
+<rect x="1150" y="754" width="238" height="34" rx="17" fill="rgba(255,255,255,.8)"/>
+<text x="1269" y="776" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="700" fill="#555">cross.jpg 1400x800</text>
+</svg>

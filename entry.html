@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ENTRY｜PLAYSHIFT 採用サイト</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;1,800;1,900&family=Dela+Gothic+One&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="entry.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <filter id="rough" x="-5%" y="-5%" width="110%" height="110%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="4" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="2.6"/>
+  </filter>
+</svg>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="PLAYSHIFT トップへ">PLAYSHIFT</a>
+    <span class="site-head__tag">RECRUIT SITE</span>
+  </div>
+</header>
+
+<!-- ハンバーガーメニュー（トップページと共通） -->
+<button class="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="メニューを開く">
+  <span class="burger__line"></span><span class="burger__line"></span>
+</button>
+<nav class="menu" id="menu" aria-label="メインメニュー" aria-hidden="true" inert>
+  <span class="menu__slab" aria-hidden="true"></span>
+  <span class="menu__slab menu__slab--blue" aria-hidden="true"></span>
+  <div class="menu__inner">
+    <ul class="menu__list">
+      <li class="menu__item" style="--i:0"><a class="menu__link" href="index.html#about"><span class="menu__en">ABOUT</span><span class="menu__ja">会社を知る</span></a></li>
+      <li class="menu__item" style="--i:1"><a class="menu__link" href="index.html#works"><span class="menu__en">WORKS</span><span class="menu__ja">仕事を知る</span></a></li>
+      <li class="menu__item" style="--i:2"><a class="menu__link" href="index.html#people"><span class="menu__en">PEOPLE</span><span class="menu__ja">人を知る</span></a></li>
+      <li class="menu__item" style="--i:3"><a class="menu__link" href="index.html#culture"><span class="menu__en">CULTURE</span><span class="menu__ja">カルチャーを知る</span></a></li>
+      <li class="menu__item" style="--i:4"><a class="menu__link" href="#form-top"><span class="menu__en">ENTRY</span><span class="menu__ja">エントリー</span></a></li>
+    </ul>
+    <p class="menu__foot menu__item" style="--i:5">PLAYSHIFT RECRUIT SITE</p>
+  </div>
+</nav>
+
+<main>
+  <!-- ENTRY HERO -->
+  <section class="ehero" aria-labelledby="entry-title">
+    <div aria-hidden="true">
+      <div class="eshape eshape--blue" data-parallax="-0.08"></div>
+      <div class="eshape eshape--pink" data-parallax="0.1"></div>
+      <div class="eshape eshape--slab" data-parallax="-0.06"></div>
+    </div>
+
+    <div class="wrap ehero__inner">
+      <nav class="crumb" aria-label="パンくずリスト">
+        <a href="index.html">TOP</a>
+        <span aria-hidden="true">&raquo;</span>
+        <span aria-current="page">ENTRY</span>
+      </nav>
+      <p class="ehero__eyebrow">JOIN OUR TEAM</p>
+      <h1 class="ehero__title split-load" id="entry-title" data-split>ENTRY</h1>
+      <p class="ehero__lead">まずは、あなたの「夢中」を聞かせてください。<br>カジュアル面談からのスタートも歓迎です。</p>
+    </div>
+  </section>
+
+  <!-- FORM SECTION -->
+  <section class="esec" id="form-top" aria-label="エントリーフォーム">
+    <div class="wrap">
+
+      <!-- ステップインジケーター -->
+      <ol class="esteps" aria-label="入力ステップ">
+        <li class="esteps__item is-active" data-step-ind="1">
+          <span class="esteps__num">01</span>
+          <span class="esteps__label">情報入力</span>
+        </li>
+        <li class="esteps__item" data-step-ind="2">
+          <span class="esteps__num">02</span>
+          <span class="esteps__label">内容確認</span>
+        </li>
+        <li class="esteps__item" data-step-ind="3">
+          <span class="esteps__num">03</span>
+          <span class="esteps__label">送信完了</span>
+        </li>
+      </ol>
+
+      <!-- STEP 1: 入力フォーム -->
+      <div class="ebox" id="step-input">
+        <form id="entry-form" novalidate>
+
+          <!-- 採用区分 -->
+          <fieldset class="efield">
+            <legend class="efield__label">採用区分 <span class="badge-req">必須</span></legend>
+            <div class="type-switch">
+              <label class="type-card">
+                <input type="radio" name="entryType" value="新卒採用" checked>
+                <span class="type-card__box">
+                  <b>新卒採用</b>
+                  <small>FRESH GRADUATES</small>
+                </span>
+              </label>
+              <label class="type-card">
+                <input type="radio" name="entryType" value="中途採用">
+                <span class="type-card__box">
+                  <b>中途採用</b>
+                  <small>MID CAREER</small>
+                </span>
+              </label>
+            </div>
+          </fieldset>
+
+          <!-- 希望職種（区分に応じて選択肢が切り替わります） -->
+          <div class="efield">
+            <label class="efield__label" for="role">希望職種 <span class="badge-req">必須</span></label>
+            <div class="select-wrap">
+              <select class="einput" id="role" name="role" required>
+                <option value="">職種を選択してください</option>
+              </select>
+            </div>
+            <p class="efield__err" id="err-role" role="alert"></p>
+          </div>
+
+          <!-- 希望スタイル -->
+          <fieldset class="efield">
+            <legend class="efield__label">エントリー方法 <span class="badge-req">必須</span></legend>
+            <div class="radio-row">
+              <label class="radio-pill">
+                <input type="radio" name="style" value="本選考にエントリー" checked>
+                <span>本選考にエントリー</span>
+              </label>
+              <label class="radio-pill">
+                <input type="radio" name="style" value="まずはカジュアル面談希望">
+                <span>まずはカジュアル面談希望</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <!-- お名前 & フリガナ -->
+          <div class="efield-row">
+            <div class="efield">
+              <label class="efield__label" for="fullname">お名前 <span class="badge-req">必須</span></label>
+              <input class="einput" id="fullname" name="fullname" type="text" placeholder="例：山田 太郎" autocomplete="name" required>
+              <p class="efield__err" id="err-fullname" role="alert"></p>
+            </div>
+            <div class="efield">
+              <label class="efield__label" for="kana">フリガナ <span class="badge-req">必須</span></label>
+              <input class="einput" id="kana" name="kana" type="text" placeholder="例：ヤマダ タロウ" required>
+              <p class="efield__err" id="err-kana" role="alert"></p>
+            </div>
+          </div>
+
+          <!-- メール & 電話番号 -->
+          <div class="efield-row">
+            <div class="efield">
+              <label class="efield__label" for="email">メールアドレス <span class="badge-req">必須</span></label>
+              <input class="einput" id="email" name="email" type="email" placeholder="example@playshift.jp" autocomplete="email" required>
+              <p class="efield__err" id="err-email" role="alert"></p>
+            </div>
+            <div class="efield">
+              <label class="efield__label" for="tel">電話番号 <span class="badge-req">必須</span></label>
+              <input class="einput" id="tel" name="tel" type="tel" placeholder="例：090-1234-5678" autocomplete="tel" required>
+              <p class="efield__err" id="err-tel" role="alert"></p>
+            </div>
+          </div>
+
+          <!-- ポートフォリオ / SNS URL -->
+          <div class="efield">
+            <label class="efield__label" for="portfolio">ポートフォリオ・制作物・SNS URL <span class="badge-opt">任意</span></label>
+            <input class="einput" id="portfolio" name="portfolio" type="url" placeholder="https://">
+            <p class="efield__hint">※ クリエイティブ職希望の方は可能な限りご記入ください（パスワードがある場合は備考欄へ）。</p>
+          </div>
+
+          <!-- 自己PR / メッセージ -->
+          <div class="efield">
+            <label class="efield__label" for="message">最近「夢中になったこと」や自己PR <span class="badge-req">必須</span></label>
+            <textarea class="einput etextarea" id="message" name="message" rows="5" placeholder="好きな作品・企画、挑戦してみたいこと、質問など自由にお書きください。" required></textarea>
+            <p class="efield__err" id="err-message" role="alert"></p>
+          </div>
+
+          <!-- プライバシーポリシー同意 -->
+          <div class="efield efield--agree">
+            <label class="check-box">
+              <input type="checkbox" id="agree" name="agree" required>
+              <span>採用選考における個人情報の取り扱いに同意する</span>
+            </label>
+            <p class="efield__err" id="err-agree" role="alert"></p>
+          </div>
+
+          <div class="eform-actions">
+            <button class="ebtn ebtn--primary" type="submit">
+              <span>入力内容を確認する</span>
+              <i aria-hidden="true">&raquo;</i>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- STEP 2: 確認画面 -->
+      <div class="ebox" id="step-confirm" hidden>
+        <h2 class="ebox__heading">入力内容の確認</h2>
+        <p class="ebox__sub">以下の内容で送信します。よろしければ「この内容でエントリーする」を押してください。</p>
+        <dl class="confirm-list" id="confirm-list"></dl>
+        <div class="eform-actions eform-actions--split">
+          <button class="ebtn ebtn--ghost" type="button" id="btn-back">
+            <i aria-hidden="true">&laquo;</i>
+            <span>修正する</span>
+          </button>
+          <button class="ebtn ebtn--primary" type="button" id="btn-submit">
+            <span>この内容でエントリーする</span>
+            <i aria-hidden="true">&raquo;</i>
+          </button>
+        </div>
+      </div>
+
+      <!-- STEP 3: 完了画面 -->
+      <div class="ebox ebox--done" id="step-done" hidden>
+        <p class="done__eyebrow">THANK YOU!</p>
+        <h2 class="done__title">エントリーを受け付けました。</h2>
+        <p class="done__text">ご応募ありがとうございます。<br>ご入力いただいたメールアドレス宛に受付完了メールをお送りしました。<br>担当者より <strong>3営業日以内</strong> にご連絡いたします。</p>
+        <div class="eform-actions">
+          <a class="ebtn ebtn--primary" href="index.html">
+            <span>採用サイトトップへ戻る</span>
+            <i aria-hidden="true">&raquo;</i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="fshape fshape--pink" aria-hidden="true" data-parallax="0.1"></div>
+  <div class="fshape fshape--blue" aria-hidden="true" data-parallax="-0.08"></div>
+  <div class="fshape fshape--rslab" aria-hidden="true" data-parallax="0.06"></div>
+  <img class="foot__city" src="images/skyline.svg" alt="" aria-hidden="true" width="800" height="400">
+  <div class="wrap">
+    <ul class="foot__nav">
+      <li><a href="index.html#about"><span class="foot__en">ABOUT</span><span class="foot__ja">会社を知る</span></a></li>
+      <li><a href="index.html#works"><span class="foot__en">WORKS</span><span class="foot__ja">仕事を知る</span></a></li>
+      <li><a href="index.html#people"><span class="foot__en">PEOPLE</span><span class="foot__ja">人を知る</span></a></li>
+      <li><a href="index.html#culture"><span class="foot__en">CULTURE</span><span class="foot__ja">カルチャーを知る</span></a></li>
+      <li><a href="#form-top"><span class="foot__en">ENTRY</span><span class="foot__ja">エントリー</span></a></li>
+    </ul>
+  </div>
+  <p class="foot__copy">&copy; PLAYSHIFT Inc. (sample)</p>
+</footer>
+
+<button class="to-top" type="button" aria-label="ページの先頭へ戻る">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 15l7-7 7 7"/></svg>
+</button>
+
+<script src="script.js"></script>
+<script src="entry.js"></script>
+</body>
+</html>

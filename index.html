@@ -1,0 +1,402 @@
+<title>PLAYSHIFT 採用サイト</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;1,800;1,900&family=Dela+Gothic+One&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <filter id="rough" x="-5%" y="-5%" width="110%" height="110%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="4" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="2.6"/>
+  </filter>
+</svg>
+
+<!-- =====================================================================
+  画像の差し替え方
+  すべての写真は <img src="images/xxx.svg"> です。src を自分の画像
+  (例: images/hero.jpg) に書き換えるだけで入れ替わります。
+  斜めの切り抜き・パララックスは親要素(.frame)側で処理しているので、
+  画像の縦横比は気にしなくて大丈夫です（object-fit: cover）。
+  ※インタビュー写真(p1〜p4)はカードとモーダルの2か所に使っています。
+====================================================================== -->
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="PLAYSHIFT トップへ">PLAYSHIFT</a>
+    <span class="site-head__tag">RECRUIT SITE</span>
+  </div>
+</header>
+
+<!-- 2. Hamburger menu -->
+<button class="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="メニューを開く">
+  <span class="burger__line"></span><span class="burger__line"></span>
+</button>
+<nav class="menu" id="menu" aria-label="メインメニュー" aria-hidden="true" inert>
+  <span class="menu__slab" aria-hidden="true"></span>
+  <span class="menu__slab menu__slab--blue" aria-hidden="true"></span>
+  <div class="menu__inner">
+    <ul class="menu__list">
+      <li class="menu__item" style="--i:0"><a class="menu__link" href="#about"><span class="menu__en">ABOUT</span><span class="menu__ja">会社を知る</span></a></li>
+      <li class="menu__item" style="--i:1"><a class="menu__link" href="#works"><span class="menu__en">WORKS</span><span class="menu__ja">仕事を知る</span></a></li>
+      <li class="menu__item" style="--i:2"><a class="menu__link" href="#people"><span class="menu__en">PEOPLE</span><span class="menu__ja">人を知る</span></a></li>
+      <li class="menu__item" style="--i:3"><a class="menu__link" href="#culture"><span class="menu__en">CULTURE</span><span class="menu__ja">カルチャーを知る</span></a></li>
+      <li class="menu__item" style="--i:4"><a class="menu__link" href="entry.html"><span class="menu__en">ENTRY</span><span class="menu__ja">エントリー</span></a></li>
+    </ul>
+    <p class="menu__foot menu__item" style="--i:5">PLAYSHIFT RECRUIT SITE</p>
+  </div>
+</nav>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div aria-hidden="true">
+      <div class="shape shape--blue" data-parallax="-0.1"></div>
+      <div class="shape shape--pink" data-parallax="0.12"></div>
+      <div class="shape shape--slab-blue" data-parallax="0.2"></div>
+    </div>
+    <figure class="hero__photo frame frame--hero">
+      <img src="images/hero.png" alt="笑顔でこちらを見上げる社員" width="800" height="1000" data-parallax="0.07" data-parallax-clamp>
+    </figure>
+    <div class="shape shape--slab" data-parallax="-0.08" aria-hidden="true"></div>
+    <img class="hero__city" src="images/skyline.svg" alt="" aria-hidden="true" width="800" height="400" data-parallax="0.14">
+    <span class="hero__arrows" style="right:12%;top:104px" aria-hidden="true">&raquo;&raquo;&raquo;</span>
+
+    <div class="wrap hero__inner">
+      <p class="hero__side"><span>戦略×クリエイティブ</span><span>SCROLL &raquo;</span></p>
+      <h1 class="hero__title split-load" id="hero-title" data-split>楽しめる<span class="sm">は、</span><br>強み<span class="sm">だ。</span></h1>
+      <p class="hero__lead">まだない景色を、面白がろう。<br>アイデアで、世の中を動かす仲間へ。</p>
+    </div>
+  </section>
+
+  <!-- MESSAGE -->
+  <section class="msg" id="about" aria-label="メッセージ">
+    <div class="wrap msg__grid">
+      <p class="msg__text scratch split-scroll" data-split data-observe>仕事を、遊びにするんじゃない。<br>仕事そのものを、<br>夢中になれるものに。</p>
+      <div class="msg__photos">
+        <figure class="frame frame--a msg__p1" data-reveal>
+          <img src="images/msg-1.jpg" alt="打ち合わせ中に笑う二人の社員" width="1000" height="750" data-parallax="0.08" data-parallax-clamp>
+        </figure>
+        <figure class="frame frame--b msg__p2" data-reveal>
+          <img src="images/msg-2.jpg" alt="テーブルを囲んで話す三人の社員" width="1200" height="800" data-parallax="0.06" data-parallax-clamp>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WE DO -->
+  <section class="works" id="works" aria-labelledby="works-title">
+    <div class="wrap works__grid">
+      <div class="works__copy">
+        <h2 class="en-title split-scroll" id="works-title" data-split data-observe>WHAT WE DO</h2>
+        <p class="works__lead" data-reveal>戦略とクリエイティブで、心を動かす。</p>
+        <p class="works__text" data-reveal>広告の枠を超えて、もっと面白いことを。<br>私たちは、アイデアの力で、<br>社会に新しいワクワクを届けます。</p>
+      </div>
+      <div class="works__visual">
+        <span class="shape shape--mint" aria-hidden="true" data-parallax="0.12"></span>
+        <span class="shape works__red" aria-hidden="true" data-parallax="-0.1"></span>
+        <figure class="frame frame--blob works__photo" data-reveal>
+          <img src="images/works.jpg" alt="壁一面のポスターを見ながら議論する社員" width="1200" height="900" data-parallax="0.07" data-parallax-clamp>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 1. Motion typography: scroll-speed marquee -->
+  <div class="marquee" aria-label="MAKE IT HAPPEN / MAKE IT FUN / BEYOND YESTERDAY">
+    <div class="marquee__track" aria-hidden="true">
+      <span>MAKE IT HAPPEN /</span><span>MAKE IT FUN /</span><span>BEYOND YESTERDAY /</span>
+      <span>MAKE IT HAPPEN /</span><span>MAKE IT FUN /</span><span>BEYOND YESTERDAY /</span>
+    </div>
+  </div>
+
+  <!-- INTERVIEW (4. Slideshow) -->
+  <section class="interview" id="people" aria-labelledby="interview-title">
+    <div class="wrap">
+      <h2 class="en-title split-scroll" id="interview-title" data-split data-observe>INTERVIEW</h2>
+      <p class="interview__sub">夢中で働く人たちのリアル。</p>
+
+      <div class="carousel" data-carousel>
+        <div class="carousel__viewport" tabindex="0" role="region" aria-roledescription="カルーセル" aria-label="社員インタビュー">
+          <div class="carousel__track">
+            <div class="carousel__slide">
+              <article class="card">
+                <div class="card__photo"><img src="images/p1.jpg" alt="山田 美咲さん" width="600" height="800"></div>
+                <div class="card__body">
+                  <h3 class="card__quote">好きだから、<br>挑戦できる。</h3>
+                  <p class="card__dept">クリエイティブ部</p>
+                  <p class="card__name">山田 美咲</p>
+                  <button class="card__btn" type="button" data-modal="tpl-yamada" aria-label="山田 美咲さんのインタビューを読む">&raquo;</button>
+                </div>
+              </article>
+            </div>
+            <div class="carousel__slide">
+              <article class="card">
+                <div class="card__photo"><img src="images/p2.jpg" alt="鈴木 健太さん" width="600" height="800"></div>
+                <div class="card__body">
+                  <h3 class="card__quote">つくるって、<br>最高だ。</h3>
+                  <p class="card__dept">プランニング部</p>
+                  <p class="card__name">鈴木 健太</p>
+                  <button class="card__btn" type="button" data-modal="tpl-suzuki" aria-label="鈴木 健太さんのインタビューを読む">&raquo;</button>
+                </div>
+              </article>
+            </div>
+            <div class="carousel__slide">
+              <article class="card">
+                <div class="card__photo"><img src="images/p3.jpg" alt="佐藤 健香さん" width="600" height="800"></div>
+                <div class="card__body">
+                  <h3 class="card__quote">ここでなら、<br>もっと面白い。</h3>
+                  <p class="card__dept">メディア部</p>
+                  <p class="card__name">佐藤 健香</p>
+                  <button class="card__btn" type="button" data-modal="tpl-sato" aria-label="佐藤 健香さんのインタビューを読む">&raquo;</button>
+                </div>
+              </article>
+            </div>
+            <div class="carousel__slide">
+              <article class="card">
+                <div class="card__photo"><img src="images/p4.jpg" alt="中村 蒼さん" width="600" height="800"></div>
+                <div class="card__body">
+                  <h3 class="card__quote">考え抜いた先に、<br>驚きがある。</h3>
+                  <p class="card__dept">ストラテジー部</p>
+                  <p class="card__name">中村 蒼</p>
+                  <button class="card__btn" type="button" data-modal="tpl-nakamura" aria-label="中村 蒼さんのインタビューを読む">&raquo;</button>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="carousel__ctrl">
+          <button class="ctrl-btn" type="button" data-prev aria-label="前のインタビュー">&laquo;</button>
+          <p class="carousel__count" aria-live="polite"><b data-cur>03</b> / <span data-total>04</span></p>
+          <button class="ctrl-btn" type="button" data-next aria-label="次のインタビュー">&raquo;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CROSS TALK -->
+  <section class="cross" id="culture" aria-labelledby="cross-title">
+    <div class="wrap cross__grid">
+      <div>
+        <h2 class="en-title split-scroll" id="cross-title" data-split data-observe>CROSS TALK</h2>
+        <p class="cross__sub scratch" data-reveal>一緒に働く仲間と、語り合う。</p>
+        <button class="cross__more" type="button" data-modal="tpl-cross">座談会を読む<i aria-hidden="true">&raquo;</i></button>
+      </div>
+      <div class="cross__visual">
+        <span class="shape shape--cpink" aria-hidden="true" data-parallax="-0.15"></span>
+        <span class="shape shape--cblue" aria-hidden="true" data-parallax="0.12"></span>
+        <figure class="frame frame--c cross__photo" data-reveal>
+          <img src="images/cross.png" alt="リラックスして語り合う四人の社員" width="1400" height="800" data-parallax="0.07" data-parallax-clamp>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- WELFARE / RECRUITMENT (6. Accordion) -->
+  <section class="info" aria-label="福利厚生と募集要項">
+    <div class="wrap">
+      <div class="acc" data-accordion="single">
+        <div class="acc__item">
+          <h2 class="acc__head">
+            <button class="acc__btn" type="button" id="acc-btn-1" aria-expanded="false" aria-controls="acc-panel-1">
+              <span class="acc__en">WELFARE</span><span class="acc__ja">福利厚生</span><span class="acc__arrow" aria-hidden="true">&raquo;</span>
+            </button>
+          </h2>
+          <div class="acc__panel" id="acc-panel-1" role="region" aria-labelledby="acc-btn-1">
+            <div class="acc__inner"><div class="acc__content">
+              <ul class="perks">
+                <li class="perk"><h4>ハイブリッド勤務</h4><p>出社とリモートを、案件に合わせて自分で選べます。</p></li>
+                <li class="perk"><h4>アイデア休暇</h4><p>年に3日、インプットのためだけに使える特別休暇。</p></li>
+                <li class="perk"><h4>学び放題</h4><p>書籍・展示・イベントの参加費を会社が支援します。</p></li>
+                <li class="perk"><h4>副業・兼業OK</h4><p>社外での挑戦も、仕事の力になると考えています。</p></li>
+                <li class="perk"><h4>ワクワク手当</h4><p>チームで新しい体験をする費用を、四半期ごとに支給。</p></li>
+                <li class="perk"><h4>充実の保険制度</h4><p>各種社会保険、健康診断、メンタルケア相談を完備。</p></li>
+              </ul>
+              <p class="note">※ 掲載内容はサンプルです。実際の制度に書き換えてください。</p>
+            </div></div>
+          </div>
+        </div>
+        <div class="acc__item">
+          <h2 class="acc__head">
+            <button class="acc__btn" type="button" id="acc-btn-2" aria-expanded="false" aria-controls="acc-panel-2">
+              <span class="acc__en">RECRUITMENT</span><span class="acc__ja">募集要項</span><span class="acc__arrow" aria-hidden="true">&raquo;</span>
+            </button>
+          </h2>
+          <div class="acc__panel" id="acc-panel-2" role="region" aria-labelledby="acc-btn-2">
+            <div class="acc__inner"><div class="acc__content">
+              <dl class="spec">
+                <div><dt>募集職種</dt><dd>プランナー / クリエイティブディレクター / コピーライター / デザイナー / メディアプランナー</dd></div>
+                <div><dt>勤務地</dt><dd>東京本社（ハイブリッド勤務可）</dd></div>
+                <div><dt>給与</dt><dd>月給 280,000円〜（経験・スキルを考慮の上、決定）</dd></div>
+                <div><dt>休日休暇</dt><dd>完全週休2日制（土日祝）/ 年次有給休暇 / アイデア休暇 / 夏季・冬季休暇</dd></div>
+                <div><dt>選考フロー</dt><dd>エントリー → 書類選考 → 面接（2回）→ 内定</dd></div>
+              </dl>
+              <p class="note">※ 掲載内容はサンプルです。実際の募集要項に書き換えてください。</p>
+            </div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOIN US -->
+  <section class="join" id="entry" aria-labelledby="join-title">
+    <div class="wrap join__grid">
+      <h2 class="join__title split-scroll" id="join-title" data-split data-observe>JOIN US</h2>
+      <div class="join__btns">
+        <button class="jbtn" type="button" data-modal="tpl-fresh"><span><b>新卒採用</b><small>FRESH GRADUATES</small></span><i aria-hidden="true">&raquo;</i></button>
+        <button class="jbtn" type="button" data-modal="tpl-mid"><span><b>中途採用</b><small>MID CAREER</small></span><i aria-hidden="true">&raquo;</i></button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="fshape fshape--pink" aria-hidden="true" data-parallax="0.1"></div>
+  <div class="fshape fshape--blue" aria-hidden="true" data-parallax="-0.08"></div>
+  <div class="fshape fshape--rslab" aria-hidden="true" data-parallax="0.06"></div>
+  <img class="foot__city" src="images/skyline.svg" alt="" aria-hidden="true" width="800" height="400">
+  <div class="wrap">
+    <ul class="foot__nav">
+      <li><a href="#about"><span class="foot__en">ABOUT</span><span class="foot__ja">会社を知る</span></a></li>
+      <li><a href="#works"><span class="foot__en">WORKS</span><span class="foot__ja">仕事を知る</span></a></li>
+      <li><a href="#people"><span class="foot__en">PEOPLE</span><span class="foot__ja">人を知る</span></a></li>
+      <li><a href="#culture"><span class="foot__en">CULTURE</span><span class="foot__ja">カルチャーを知る</span></a></li>
+      <li><a href="entry.html"><span class="foot__en">ENTRY</span><span class="foot__ja">エントリー</span></a></li>
+    </ul>
+  </div>
+  <p class="foot__copy">&copy; PLAYSHIFT Inc. (sample)</p>
+</footer>
+
+<button class="to-top" type="button" aria-label="ページの先頭へ戻る">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 15l7-7 7 7"/></svg>
+</button>
+
+<!-- 5. Modal window -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+  <div class="modal__backdrop" data-close></div>
+  <div class="modal__panel" tabindex="-1">
+    <button class="modal__close" type="button" data-close aria-label="閉じる">&times;</button>
+    <div class="modal__body"></div>
+  </div>
+</div>
+
+<!-- モーダルの中身: <template id="…"> を書き足し、ボタンに data-modal="…" を付けるだけで増やせます -->
+<template id="tpl-yamada">
+  <div class="mdl">
+    <p class="mdl__eyebrow">INTERVIEW</p>
+    <div class="mdl__head">
+      <div class="mdl__photo"><img src="images/p1.jpg" alt="山田 美咲さん"></div>
+      <div><h2 id="modal-title" class="mdl__quote">好きだから、<br>挑戦できる。</h2><p class="mdl__meta">クリエイティブ部 ／ <strong>山田 美咲</strong></p></div>
+    </div>
+    <div class="mdl__qa">
+      <h3>Q. いまの仕事内容を教えてください。</h3>
+      <p>キャンペーンのアイデア出しから、映像・グラフィックの制作ディレクションまでを担当しています。企画書の一行目を考える時間が、いちばん好きです。</p>
+      <h3>Q. 入社の決め手は？</h3>
+      <p>面接で「あなたの好きなものを教えて」と聞かれたことです。仕事の話より先に、人を知ろうとする会社だと感じました。</p>
+      <h3>Q. これから挑戦したいことは？</h3>
+      <p>広告の枠を越えて、街や空間を使った体験づくりに挑戦したいです。</p>
+    </div>
+  </div>
+</template>
+
+<template id="tpl-suzuki">
+  <div class="mdl">
+    <p class="mdl__eyebrow">INTERVIEW</p>
+    <div class="mdl__head">
+      <div class="mdl__photo"><img src="images/p2.jpg" alt="鈴木 健太さん"></div>
+      <div><h2 id="modal-title" class="mdl__quote">つくるって、<br>最高だ。</h2><p class="mdl__meta">プランニング部 ／ <strong>鈴木 健太</strong></p></div>
+    </div>
+    <div class="mdl__qa">
+      <h3>Q. プランナーの仕事とは？</h3>
+      <p>課題を聞いて、解き方そのものを考える仕事です。正解のない問いに、チームで答えを出していきます。</p>
+      <h3>Q. 印象に残っている仕事は？</h3>
+      <p>地方の小さな企業と、一年かけて新ブランドを立ち上げたことです。発売日の行列は、いまでも忘れられません。</p>
+      <h3>Q. どんな人と働きたい？</h3>
+      <p>目の前のことを面白がれる人。そして、人の面白がりも面白がれる人です。</p>
+    </div>
+  </div>
+</template>
+
+<template id="tpl-sato">
+  <div class="mdl">
+    <p class="mdl__eyebrow">INTERVIEW</p>
+    <div class="mdl__head">
+      <div class="mdl__photo"><img src="images/p3.jpg" alt="佐藤 健香さん"></div>
+      <div><h2 id="modal-title" class="mdl__quote">ここでなら、<br>もっと面白い。</h2><p class="mdl__meta">メディア部 ／ <strong>佐藤 健香</strong></p></div>
+    </div>
+    <div class="mdl__qa">
+      <h3>Q. 転職して変わったことは？</h3>
+      <p>前職では「決まった枠に合わせる」ことが多かったのですが、ここでは枠のつくり方から相談できます。</p>
+      <h3>Q. 一日の流れを教えてください。</h3>
+      <p>午前は媒体社との打ち合わせ、午後はチームで企画の壁打ち。夕方は一人でデータと向き合う時間にしています。</p>
+      <h3>Q. 応募を迷っている人へ。</h3>
+      <p>迷うなら、一度話しに来てください。話すだけでも、考えが整理されると思います。</p>
+    </div>
+  </div>
+</template>
+
+<template id="tpl-nakamura">
+  <div class="mdl">
+    <p class="mdl__eyebrow">INTERVIEW</p>
+    <div class="mdl__head">
+      <div class="mdl__photo"><img src="images/p4.jpg" alt="中村 蒼さん"></div>
+      <div><h2 id="modal-title" class="mdl__quote">考え抜いた先に、<br>驚きがある。</h2><p class="mdl__meta">ストラテジー部 ／ <strong>中村 蒼</strong></p></div>
+    </div>
+    <div class="mdl__qa">
+      <h3>Q. 戦略とクリエイティブの関係は？</h3>
+      <p>戦略は、アイデアが跳ぶための助走だと思っています。助走が長いほど、遠くまで跳べます。</p>
+      <h3>Q. 大切にしている習慣は？</h3>
+      <p>毎朝、昨日と違う道で出社すること。小さな「まだない景色」を探しています。</p>
+      <h3>Q. 新卒の皆さんへ。</h3>
+      <p>得意なことより、夢中になれることを聞かせてください。</p>
+    </div>
+  </div>
+</template>
+
+<template id="tpl-cross">
+  <div class="mdl">
+    <p class="mdl__eyebrow">CROSS TALK</p>
+    <h2 id="modal-title" class="mdl__quote">一緒に働く仲間と、語り合う。</h2>
+    <div class="mdl__wide"><img src="images/cross.png" alt="座談会の様子"></div>
+    <div class="mdl__qa">
+      <h3>テーマ：「楽しい」を仕事にするって、どういうこと？</h3>
+      <p><strong>山田</strong>　楽しいって、ラクという意味じゃないんですよね。悩む時間も含めて、自分で選んでいる感覚があります。</p>
+      <p><strong>鈴木</strong>　わかる。しんどい日も、「これをつくりたい」が残っていれば前に進める。</p>
+      <p><strong>佐藤</strong>　その「つくりたい」を笑わずに聞いてくれる人がいるのが、ここの強みだと思います。</p>
+      <p><strong>中村</strong>　だから、まずは話してみてほしいですね。</p>
+    </div>
+  </div>
+</template>
+
+<template id="tpl-fresh">
+  <div class="mdl">
+    <p class="mdl__eyebrow">FRESH GRADUATES</p>
+    <h2 id="modal-title" class="mdl__quote">新卒採用</h2>
+    <div class="mdl__qa">
+      <h3>募集職種</h3>
+      <ul class="mdl__list"><li>プランナー</li><li>クリエイティブ（コピー・デザイン）</li><li>メディアプランナー</li></ul>
+      <h3>選考フロー</h3>
+      <p>エントリー → 課題提出 → 面接（2回）→ 内定</p>
+    </div>
+    <!-- エントリーURLに差し替えてください -->
+    <a class="mdl__cta" href="entry.html?type=fresh">エントリーページへ <span aria-hidden="true">&raquo;</span></a>
+  </div>
+</template>
+
+<template id="tpl-mid">
+  <div class="mdl">
+    <p class="mdl__eyebrow">MID CAREER</p>
+    <h2 id="modal-title" class="mdl__quote">中途採用</h2>
+    <div class="mdl__qa">
+      <h3>募集職種</h3>
+      <ul class="mdl__list"><li>クリエイティブディレクター</li><li>ストラテジックプランナー</li><li>プロデューサー</li></ul>
+      <h3>選考フロー</h3>
+      <p>エントリー → 書類選考 → カジュアル面談 → 面接（2回）→ 内定</p>
+    </div>
+    <!-- エントリーURLに差し替えてください -->
+   <a class="mdl__cta" href="entry.html?type=mid">エントリーページへ <span aria-hidden="true">&raquo;</span></a>
+  </div>
+</template>
+<script src="script.js"></script>

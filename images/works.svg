@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-label="works.jpg 1200x900">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f3efe6"/><stop offset="1" stop-color="#dfe6dc"/></linearGradient></defs>
+<rect width="1200" height="900" fill="url(#g)"/>
+
+<path d="M55.0 900 Q55.0 705.0 280 697.5 Q505.0 705.0 505.0 900 Z" fill="#6b7f5c"/>
+<rect x="241.0" y="619.5" width="78.0" height="105.0" rx="30.0" fill="#dba982"/>
+<ellipse cx="280" cy="525.0" rx="96.60000000000001" ry="105.0" fill="#dba982"/>
+<path d="M180.25 514.5 Q185.5 393.75 280 401.1 Q379.75 393.75 379.75 514.5 Q343.0 451.5 280 459.9 Q217.0 451.5 180.25 514.5 Z" fill="#3a2a22"/>
+
+<path d="M380.0 900 Q380.0 692.0 620 684.0 Q860.0 692.0 860.0 900 Z" fill="#1d1d22"/>
+<rect x="578.4" y="600.8" width="83.2" height="112.0" rx="32.0" fill="#e8b88f"/>
+<ellipse cx="620" cy="500.0" rx="103.04" ry="112.0" fill="#e8b88f"/>
+<path d="M513.6 488.8 Q519.2 360.0 620 367.84000000000003 Q726.4 360.0 726.4 488.8 Q687.2 421.6 620 430.56 Q552.8 421.6 513.6 488.8 Z" fill="#2a1d18"/>
+
+<path d="M725.0 900 Q725.0 705.0 950 697.5 Q1175.0 705.0 1175.0 900 Z" fill="#c9d2de"/>
+<rect x="911.0" y="619.5" width="78.0" height="105.0" rx="30.0" fill="#f1c9a5"/>
+<ellipse cx="950" cy="525.0" rx="96.60000000000001" ry="105.0" fill="#f1c9a5"/>
+<path d="M850.25 514.5 Q855.5 393.75 950 401.1 Q1049.75 393.75 1049.75 514.5 Q1013.0 451.5 950 459.9 Q887.0 451.5 850.25 514.5 Z" fill="#1f1714"/>
+
+<rect x="950" y="854" width="238" height="34" rx="17" fill="rgba(255,255,255,.8)"/>
+<text x="1069" y="876" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="700" fill="#555">works.jpg 1200x900</text>
+</svg>

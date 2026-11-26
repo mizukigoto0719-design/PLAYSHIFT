@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="600" height="800" role="img" aria-label="p3.jpg 600x800">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#efe3d8"/><stop offset="1" stop-color="#dcc8b6"/></linearGradient></defs>
+<rect width="600" height="800" fill="url(#g)"/>
+
+<path d="M0.0 800 Q0.0 540.0 300 530.0 Q600.0 540.0 600.0 800 Z" fill="#1d1d22"/>
+<rect x="248.0" y="426.0" width="104.0" height="140.0" rx="40.0" fill="#f6d3b6"/>
+<ellipse cx="300" cy="300.0" rx="128.8" ry="140.0" fill="#f6d3b6"/>
+<path d="M167.0 286.0 Q174.0 125.0 300 134.8 Q433.0 125.0 433.0 286.0 Q384.0 202.0 300 213.2 Q216.0 202.0 167.0 286.0 Z" fill="#1f1714"/>
+
+<rect x="350" y="754" width="238" height="34" rx="17" fill="rgba(255,255,255,.8)"/>
+<text x="469" y="776" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="700" fill="#555">p3.jpg 600x800</text>
+</svg>
